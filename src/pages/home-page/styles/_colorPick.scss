@@ -1,0 +1,53 @@
+.colorPickContainer{
+    margin: 16px 0 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    & &__title{
+        flex-basis: 100%;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.4em;
+        letter-spacing: -0.01em;
+    }
+
+    & &__inputContainer:first-child > label{
+        background-color: var(--background-color);
+    }
+
+    & &__inputContainer:nth-child(2) > label{
+        background-color: var(--pink-color);
+    }
+
+    & &__inputContainer:nth-child(3) > label{
+        background-color: var(--light-pink-color);
+    }
+
+    & &__inputContainer:nth-child(4) > label{
+        background-color: var(--light-gray-color);
+    }
+
+    & &__inputContainer{
+        & > label{
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+        }
+
+        & > input{
+            display: none;
+            cursor: pointer;           
+            
+            &:checked + label{
+                border: 1px solid var(--black-color);
+            }
+        }
+    }
+
+    & &__form{
+        display: flex;
+        gap: 16px;
+    }
+}

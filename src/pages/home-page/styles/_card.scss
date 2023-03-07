@@ -1,0 +1,49 @@
+.card{
+    width: 343px;
+    background-color: var(--white-color);
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 64px 14px;
+
+    & &__imageContainer{
+        height: 246px;
+
+        & > img {
+            width: 100%;            
+        }
+    }
+
+    & &__content{
+        padding: 24px 16px;
+    }
+
+    & &__category{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.4em;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        color: var(--dark-pink-color);
+    }
+
+    & &__title{
+        font-family: 'Playfair Display';
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.1em;
+        margin: 8px 0 12px;
+        max-width: 7em;
+    }
+
+    & &__description{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.4em;
+        letter-spacing: -0.01em;
+        color: var(--dark-gray-color);
+    }
+
+    & &__button{
+        margin-top: 16px;
+    }
+}

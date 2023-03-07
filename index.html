@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INVO Academy JS Starter with Vite</title>
+</head>
+
+<!-- In order to start your challenge, remove all the content inside <div id="home-page"></div> and start coding :) -->
+
+<body>
+  <div id="home-page" class="card">
+    <div class="card__imageContainer">
+      <img src="/images/image1.png" alt="portfel w kolorze rożowym"/>
+    </div>
+    <div class="card__content">
+      <span class="card__category">portfele</span>
+      <h1 class="card__title">Skórzany portfel z logo</h1>
+      <p class="card__description">Różowy portfel Gucci. Wykonany ze skóry o ziarnistej fakturze. Zamykany na zatrzask. Z przodu ozdobiony aplikacją w kształcie logo. Wewnątrz przegroda na banknoty, kieszeń na monety zamykana na zamek, dwie wsuwane i cztery miejsca na karty.</p>
+      <div class="colorPickContainer">
+        <span class="colorPickContainer__title">Kolor</span>
+        <form class="colorPickContainer__form">
+          <div class="colorPickContainer__inputContainer">
+            <input type="radio" name="colorPick" checked id="color1"/>
+            <label for="color1"></label>
+          </div>          
+          <div class="colorPickContainer__inputContainer">
+            <input type="radio" name="colorPick" id="color2" />
+            <label for="color2"></label>
+          </div>
+          <div class="colorPickContainer__inputContainer">
+            <input type="radio" name="colorPick" id="color3" />
+            <label for="color3"></label>
+          </div>
+          <div class="colorPickContainer__inputContainer">
+            <input type="radio" name="colorPick" id="color4" />
+            <label for="color4"></label>
+          </div>          
+        </form>
+      </div>
+      <div class="priceContainer">
+        <span class="priceContainer__actualPrice">1849,00 zł</span>
+        <span class="priceContainer__prevPrice">1749,00 zł</span>
+      </div>
+      <button class="button card__button">Dodaj do koszyka</button>
+    </div>    
+  </div>
+
+  <script type="module" src="/src/global-scripts/main.js"></script>
+  <script type="module" src="/src/pages/home-page/scripts/home-page.js"></script>
+</body>
+
+</html>

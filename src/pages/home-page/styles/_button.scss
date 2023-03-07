@@ -1,0 +1,23 @@
+.button{
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4em;
+    letter-spacing: -0.01em;
+    color: var(--white-color);
+    padding: 14px 0;
+    background-color: var(--dark-pink-color);
+    width: 100%;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+
+    &:hover{
+        background: #FFC4AD;
+    }
+
+    &:active{
+        background: #F1AD94;
+    }
+}
