@@ -13,7 +13,7 @@
 <body>
   <div id="home-page" class="card">
     <div class="card__imageContainer">
-      <img src="/images/image1.png" alt="portfel w kolorze rożowym"/>
+      <img src="/images/image1.png" alt="portfel w kolorze rożowym" id="productImage"/>
     </div>
     <div class="card__content">
       <span class="card__category">portfele</span>
@@ -21,21 +21,21 @@
       <p class="card__description">Różowy portfel Gucci. Wykonany ze skóry o ziarnistej fakturze. Zamykany na zatrzask. Z przodu ozdobiony aplikacją w kształcie logo. Wewnątrz przegroda na banknoty, kieszeń na monety zamykana na zamek, dwie wsuwane i cztery miejsca na karty.</p>
       <div class="colorPickContainer">
         <span class="colorPickContainer__title">Kolor</span>
-        <form class="colorPickContainer__form">
+        <form class="colorPickContainer__form" id="colorPickForm">
           <div class="colorPickContainer__inputContainer">
-            <input type="radio" name="colorPick" checked id="color1"/>
+            <input type="radio" name="colorPick" id="color1" value="color1" checked/>
             <label for="color1"></label>
           </div>          
           <div class="colorPickContainer__inputContainer">
-            <input type="radio" name="colorPick" id="color2" />
+            <input type="radio" name="colorPick" id="color2" value="color2" />
             <label for="color2"></label>
           </div>
           <div class="colorPickContainer__inputContainer">
-            <input type="radio" name="colorPick" id="color3" />
+            <input type="radio" name="colorPick" id="color3" value="color3" />
             <label for="color3"></label>
           </div>
           <div class="colorPickContainer__inputContainer">
-            <input type="radio" name="colorPick" id="color4" />
+            <input type="radio" name="colorPick" id="color4" value="color4" />
             <label for="color4"></label>
           </div>          
         </form>
@@ -44,7 +44,7 @@
         <span class="priceContainer__actualPrice">1 849,00 <span>zł</span></span>
         <span class="priceContainer__prevPrice">1 749,00 <span>zł</span></span>
       </div>
-      <button class="button card__button">Dodaj do koszyka</button>
+      <button id="submitButton" class="button card__button">Dodaj do koszyka</button>
     </div>    
   </div>
 
