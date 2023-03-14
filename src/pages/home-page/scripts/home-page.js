@@ -10,10 +10,14 @@ const imageHandler = document.querySelector('#productImage');
 const formHandler = document.querySelector("#colorPickForm");
 const buttonHandler = document.querySelector("#submitButton");
 
-formHandler.addEventListener('change', () => {
+const setImage = () => {
     const pickedColor = getPickedColor();
     changeProductImage(pickedColor, imageHandler);
-})
+}
+
+window.addEventListener('load' , setImage);
+window.addEventListener('resize', setImage);
+formHandler.addEventListener('change', setImage);
 
 
 buttonHandler.addEventListener('click', ()=>{

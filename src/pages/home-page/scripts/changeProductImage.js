@@ -1,21 +1,27 @@
 const changeProductImage = (pickedColor, imageHandler) => {
-    let imageUrl = "";
+    let imageName = "";
     switch (pickedColor){
         case "color2":
-            imageUrl = '/images/image2.png';
+            imageName = 'image2.png';
             break;
         case "color3":
-            imageUrl = '/images/image3.png';
+            imageName = 'image3.png';
             break;
         case "color4":
-            imageUrl = '/images/image4.png';
+            imageName = 'image4.png';
             break;    
         default:
-            imageUrl = '/images/image1.png';
+            imageName = 'image1.png';
             break;        
     }
 
-    imageHandler.src = imageUrl;
+    if(window.innerWidth < 600){
+        imageHandler.src = "/images/mobile-" + imageName;
+    }else{
+        imageHandler.src = '/images/' + imageName;
+    }
+    
+    
 }
 
 export default changeProductImage;
